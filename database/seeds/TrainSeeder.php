@@ -25,8 +25,8 @@ class TrainSeeder extends Seeder
 
             $train->azienda = $faker->randomElement($aziende);
             $train->data_di_partenza = $faker->dateTimeThisYear();
-            $train->stazione_di_partenza = $faker->word();
-            $train->stazione_di_arrivo = $faker->word();
+            $train->stazione_di_partenza = $faker->city();
+            $train->stazione_di_arrivo = $faker->city();
             $train->orario_di_partenza = $faker->time();
             $train->orario_di_arrivo = $faker->time();
             $train->codice_treno = $faker->regexify('[A-Z]{5}[0-4]{3}');
